@@ -9,7 +9,7 @@ function AboutUS() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-[2rem] py-[4rem] px-[10px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-[2rem] py-[4rem] px-[10px] w-full max-w-[1500px] mx-auto justify-center items-center">
         <div className="">
           <h2 className="text-[20px] font-[600] text-white">About</h2>
           <h3 className="text-[20px] font-[600] text-[#f44f24] mt-[-5px]">

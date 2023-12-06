@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <div className="grid grid-cols-2 py-[20px] px-[10px]">
+    <div className="grid grid-cols-2 py-[20px] px-[10px] w-full max-w-[1500px] mx-auto">
       <div className="">
         <Link href="/">
           <Image
@@ -15,8 +15,8 @@ function Header() {
           />
         </Link>
       </div>
-      <div className="flex justify-around">
-        <div className="hidden md:flex items-center text-white text-[18px] font-[600] gap-[3rem]">
+      <div className="flex justify-end lg:justify-around">
+        <div className="hidden lg:flex items-center text-white text-[18px] font-[600] gap-[3rem]">
           <Link href="/">Home</Link>
           <Link href="/press">Press</Link>
           <Link href="/about">About Us</Link>

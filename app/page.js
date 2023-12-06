@@ -49,7 +49,7 @@ export default function Home() {
         <Image src="/images/home2.png" width={900} height={400} alt="" />
       </div>
 
-      <div className="flex flex-col gap-[1rem] md:ml-[20%] px-[10px] my-[4rem]">
+      <div className="flex flex-col gap-[1rem] px-[10px] my-[4rem] w-full max-w-[800px] mx-auto">
         <h1 className="text-[28px] font-[700] text-white tracking-wide">
           MEDIA
         </h1>
