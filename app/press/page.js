@@ -39,7 +39,19 @@ function Press() {
           </p>
 
           <div className="">
-            <Image src="/images/home2.png" width={800} height={400} alt="" />
+            {/* <Image src="/images/home2.png" width={800} height={400} alt="" /> */}
+            <div
+              className="relative max-w-[900px] max-h-[500px] mx-auto"
+              style={{ paddingBottom: "56.25%", height: 0, overflow: "hidden" }}
+            >
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/5f7OUjCfS80"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
             <p className="text-[16px] font-[500] text-white opacity-70 w-full md:w-[60%]">
               This bar represents your progress As you survive through this
               enchanting realm, That will grant you access to the ultimate
