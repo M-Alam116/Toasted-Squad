@@ -1,6 +1,23 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 function AboutUS() {
+  const [state, handleSubmit] = useForm("xleyqgla");
+  const [email, setEmail] = useState("");
+
+  const clearFormInputs = () => {
+    setEmail("");
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    handleSubmit(e);
+    clearFormInputs();
+  };
+
   return (
     <div className="">
       <div className="w-full aboutbg min-h-[300px] mt-[-5rem] px-[10px] flex items-center justify-center">
@@ -27,16 +44,27 @@ function AboutUS() {
           create an experience that captures the essence of old school gaming.
           Our team is passionate about bringing back the nostalgia with pixel
           art aesthetics, classic gameplay mechanics, and a touch of modern
-          innovation <br /> <span className="text-[#f44f24]">Read More</span>
+          innovation
         </p>
 
-        <form action="" className="flex flex-col sm:flex-row items-center justify-center gap-[1rem]">
+        <form
+          onSubmit={handleFormSubmit}
+          className="flex flex-col sm:flex-row items-center justify-center gap-[1rem]"
+        >
           <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            id="email"
             type="email"
+            name="email"
             placeholder="Toastedsquadstudios@gmail.com"
             className="p-[10px] border-[1px] text-white border-white bg-transparent outline-none w-[300px]"
           />
-          <button className="bg-[#f44f24] py-[12px] px-[25px] text-[14px] font-[500] text-white">
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <button
+            type="submit"
+            className="bg-[#f44f24] py-[12px] px-[25px] text-[14px] font-[500] text-white"
+          >
             Press contact
           </button>
         </form>
