@@ -3,7 +3,7 @@ import Image from "next/image";
 function Press() {
   return (
     <div className="">
-      <div className="w-full homebg min-h-[300px] mt-[-5rem] px-[10px] flex items-center justify-center">
+      <div className="w-full aboutbg min-h-[300px] mt-[-5rem] px-[10px] flex items-center justify-center">
         <h1 className="text-[32px] font-[700] text-white mt-[3rem]">
           Press Kit
         </h1>
@@ -52,7 +52,7 @@ function Press() {
                 allowFullScreen
               ></iframe>
             </div>
-            <p className="text-[16px] font-[500] text-white opacity-70 w-full md:w-[60%]">
+            <p className="text-[16px] font-[500] text-white opacity-70 w-full md:w-[60%] mt-[1rem]">
               This bar represents your progress As you survive through this
               enchanting realm, That will grant you access to the ultimate
               showdown. Where you{`'`}ll put all your skills and powers to the

@@ -23,6 +23,13 @@ html {
   background-repeat: no-repeat;
 }
 
+.aboutbg {
+  background: url("/images/about.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 1024px) {
   .navigation {
     width: 100%;

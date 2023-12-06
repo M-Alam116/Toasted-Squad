@@ -21,27 +21,38 @@ function Footer() {
         <Link href="/about">About Us</Link>
       </div>
       <div className="flex items-center gap-[2rem]">
-        <Image
-          src="/images/insta.png"
-          width={40}
-          height={40}
-          alt=""
-          className="w-[40px] h-[40px]"
-        />
-        <Image
-          src="/images/yt.png"
-          width={40}
-          height={40}
-          alt=""
-          className="w-[40px] h-[40px]"
-        />
-        <Image
-          src="/images/x.png"
-          width={40}
-          height={40}
-          alt=""
-          className="w-[40px] h-[40px]"
-        />
+        <Link
+          href="https://www.instagram.com/toasted_squad_studios?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+          target="_blank"
+        >
+          <Image
+            src="/images/insta.png"
+            width={40}
+            height={40}
+            alt=""
+            className="w-[40px] h-[40px]"
+          />
+        </Link>
+
+        <Link href="https://www.youtube.com/@ToastedSquadStudios" target="_blank">
+          <Image
+            src="/images/yt.png"
+            width={40}
+            height={40}
+            alt=""
+            className="w-[40px] h-[40px]"
+          />
+        </Link>
+
+        <Link href="https://twitter.com/toastedsquad?s=21" target="_blank">
+          <Image
+            src="/images/x.png"
+            width={40}
+            height={40}
+            alt=""
+            className="w-[40px] h-[40px]"
+          />
+        </Link>
       </div>
 
       <div className="w-[90%] h-[2px] flex mx-auto bg-white opacity-10 my-[2rem]" />

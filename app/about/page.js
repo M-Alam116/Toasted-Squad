@@ -3,7 +3,7 @@ import Image from "next/image";
 function AboutUS() {
   return (
     <div className="">
-      <div className="w-full homebg min-h-[300px] mt-[-5rem] px-[10px] flex items-center justify-center">
+      <div className="w-full aboutbg min-h-[300px] mt-[-5rem] px-[10px] flex items-center justify-center">
         <h1 className="text-[32px] font-[700] text-white mt-[3rem]">
           About Us
         </h1>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,9 +23,14 @@ export default function Home() {
 
       <div className="flex flex-col justify-center items-center mt-[-3rem] gap-[2rem] px-[10px]">
         <Image src="/images/home1.png" width={600} height={900} alt="" />
-        <button className="bg-[#f44f24] py-[8px] px-[25px] rounded-[5px] text-[14px] font-[500] text-white">
-          BUY NOW
-        </button>
+        <Link
+          href="https://store.steampowered.com/app/2602450/Spellbound_Survivors/"
+          target="_blank"
+        >
+          <button className="bg-[#f44f24] py-[8px] px-[25px] rounded-[5px] text-[14px] font-[500] text-white">
+            BUY NOW
+          </button>
+        </Link>
       </div>
 
       <div className="flex flex-col gap-[1rem] mx-auto justify-center items-center my-[3rem] px-[10px] w-full md:w-[700px]">
@@ -69,9 +75,11 @@ export default function Home() {
         <p className="text-[14px] font-[400] text-white tracking-wider">
           DOWNLOAD SCREENSHOTS, KEY ART. LOGOS, AND MORE
         </p>
-        <button className="bg-[#f44f24] py-[8px] w-fit px-[25px] rounded-full text-[14px] font-[500] text-white">
-          GO TO PRESSKIT
-        </button>
+        <Link href="/press">
+          <button className="bg-[#f44f24] py-[8px] w-fit px-[25px] rounded-full text-[14px] font-[500] text-white">
+            GO TO PRESSKIT
+          </button>
+        </Link>
       </div>
     </div>
   );

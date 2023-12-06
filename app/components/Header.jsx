@@ -33,9 +33,14 @@ function Header() {
             <ImCross className="w-4 h-4 cursor-pointer text-white ml-[10px] absolute top-[1rem] left-[1rem] lg:hidden" />
           </div>
         </div>
-        <button className="bg-[#f44f24] py-[8px] px-[25px] rounded-full text-[14px] font-[500] text-white">
-          Play Now
-        </button>
+        <Link
+          href="https://store.steampowered.com/app/2602450/Spellbound_Survivors/"
+          target="_blank"
+        >
+          <button className="bg-[#f44f24] py-[8px] px-[25px] rounded-full text-[14px] font-[500] text-white">
+            Play Now
+          </button>
+        </Link>
 
         <span className="block lg:hidden" onClick={toggleMenu}>
           <BiMenu className="w-8 h-8 cursor-pointer text-white ml-[10px]" />
